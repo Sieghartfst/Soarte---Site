@@ -1,0 +1,475 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* HEADER */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 10;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #4CAF50;
+  }
+
+  .card-img-header {
+    width: 80px;
+    height: 58px;
+    object-fit: cover; /* corta a imagem para preencher a área sem deformar */
+  }
+
+  .inicio {
+    background: url('../img/um-homem-dando-um-discurso-em-um-podio-com-um-microfone-na-frente-dele_1030147-11722.webp')  no-repeat center center/cover;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    align-items: last baseline;
+    justify-content: left;
+    padding: 2rem;
+    text-align: left;
+    color: white;
+  }
+
+  .inicio-content {
+    background-color: #2D5C39;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; /* faz a div ocupar toda a largura da section */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .inicio-content h1 {
+    padding: 50px;
+    font-size: 4em;
+    margin-left: 60px;
+  }
+
+  .inicio-content p {
+    padding: 50px;
+    margin-right: 100px;
+    margin-top: 25px;
+    line-height: 1.6;
+    font-size: 1.25em;
+  }
+
+ /*.transformacao {
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+  } */
+
+.transformacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* espaça igualmente entre os dois blocos */
+  padding: 60px 80px;              /* aumenta o padding lateral */
+  gap: 60px;
+  background-color: #191919;
+  height: 680px;
+}
+
+.logo-transformacao {
+  flex: 1;                        
+  display: flex;
+  justify-content: center;       
+}
+
+.transformacao img {
+  width: 600px;                   
+  height: auto;
+  object-fit: contain;
+}
+
+.transformacao-content {
+  flex: 1;                        
+  padding: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: left;
+}
+
+.transformacao h1, .transformacao p {
+  text-align: left; 
+}
+
+.botoes {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-primario {
+  background-color: #444;
+  color: white;
+  border-radius: 10px;
+}
+
+.btn-secundario {
+  background-color: transparent;
+  color: white;
+  border: 1px transparent #555;
+}
+
+/* Seção de Música */
+
+.musica {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background-color: #0e2218;
+  color: white;
+  gap: 40px;
+}
+
+.musica-content {
+  flex: 1;
+  min-width: 320px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.musica-content small {
+  font-size: 14px;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.musica-content h1 {
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.musica-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.musica-beneficios {
+  display: flex;
+  flex-direction: row;
+  gap: 40px; 
+  flex-wrap: wrap; 
+}
+
+.beneficio {
+  flex: 1;
+  min-width: 240px; /* Garante que em telas pequenas eles empilhem */
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.beneficio img {
+  width: 32px;
+  height: 32px;
+}
+
+.beneficio h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.beneficio p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.musica-botoes {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.m-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.m-btn-primario {
+  background-color: #444;
+  color: white;
+}
+
+.m-btn-secundario {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #888;
+}
+
+.musica-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.musica-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Equipe */
+
+.equipe {
+  padding: 60px 40px;
+  text-align: center;
+  background-color: #191919;
+}
+
+.equipe-header span {
+  font-size: 0.8rem;
+  color: #bbb;
+}
+
+.equipe-header h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.equipe-header p {
+  color: #ccc;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.equipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.equipe-card {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 260px;
+  text-align: center;
+}
+
+.equipe-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.equipe-card h3 {
+  margin: 15px 0 5px;
+  font-size: 1.1rem;
+}
+
+.equipe-card span {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.equipe-card p {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin: 10px 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+/* Convite */
+.convite {
+  background-color: #163c24;
+  padding: 60px 20px;
+  color: white;
+}
+
+.convite-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+/* Esquerda: título */
+.convite-texto-esquerda {
+  flex: 1;
+  min-width: 280px;
+  margin-right: 100px;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.convite-texto-esquerda h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 100px;
+}
+
+/* Direita: parágrafo + botões */
+.convite-texto-direita {
+  max-width: 600px;
+  text-align: left;
+  margin-right: 100px;
+}
+
+.convite-texto-direita p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.botao-convite {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-convite {
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.doar {
+  background-color: #00c24e;
+  color: white;
+}
+
+.voluntariar {
+  background-color: #2c4736;
+  color: white;
+}
+
+
+
+/* Footer */
+
+.footer {
+  background-color: #000; /* preto */
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-footer {
+  color: #00ff88;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-img-footer {
+  width: 80px;
+  height: 58px;
+  object-fit: cover; /* corta a imagem para preencher a área sem deformar */
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00ff88;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+}
+
+.social-icons a {
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00ff88;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+  }
+}

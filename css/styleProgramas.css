@@ -1,0 +1,243 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #4CAF50;
+}
+
+.card-img-header {
+    width: 80px;
+    height: 58px;
+    object-fit: cover; /* corta a imagem para preencher a área sem deformar */
+}
+
+/* Transformação */
+
+.transformacao {
+  background-color: #233323;
+  color: white;
+  padding: 200px 40px 60px 40px; /* aumentei o padding-top */
+  font-family: Arial, sans-serif;
+  text-align: left;
+  height: 450px;
+}
+
+.transformacao h4 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.transformacao h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+}
+
+.transformacao .descricao {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cfcfcf;
+  max-width: 700px;
+}
+
+/* Projetos */
+
+.programas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #344E34;
+  padding: 80px 60px;
+  gap: 40px;
+  color: white;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+}
+
+.programas .programas-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.programas h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.programas p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+.programas .programas-img {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.programas img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Programas Violão*/
+
+.programas-violao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2A442E;
+  padding: 80px 60px;
+  color: white;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.violao-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.violao-content h2 {
+  font-size: 28px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.violao-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #d1d5db;
+  margin-bottom: 30px;
+}
+
+.violao-beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.beneficio {
+  flex: 1;
+  min-width: 250px;
+  margin-top: 30px;
+}
+
+.beneficio h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.beneficio p {
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+.violao-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.violao-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Programa-template */
+
+.programas-template {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #113a1f;
+  padding: 80px 60px;
+  color: white;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.template-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.template-content h2 {
+  font-size: 28px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.template-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+.template-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.informatica-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
