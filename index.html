@@ -1,11 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soarte - Música e Transformação</title>
+
+  <!-- Link para o arquivo de estilos personalizados -->
+  <link rel="stylesheet" href="CSS/style.css" />
+
+  <!-- Font Awesome para ícones (ex: redes sociais) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-    <h1><a href=""></a></h1>
+
+  <!-- Cabeçalho com logotipo e menu de navegação -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <!-- Logotipo da Soarte -->
+        <img src="img/logo-soarte.png" alt="Logo da Soarte" class="card-img-header">
+      </a>
+    </div>
+
+    <!-- Menu principal do site -->
+    <nav>
+      <ul>
+        <li><a href="sobreNos.html">Sobre Nós</a></li>
+        <li><a href="programas.html">Nossos Projetos</a></li>
+        <li><a href="https://apoia.se/soarte">Doações</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção principal de destaque -->
+  <section class="hero">
+    <!-- Camada escura por cima da imagem de fundo -->
+    <div class="overlay"></div>
+
+    <!-- Conteúdo de texto centralizado -->
+    <div class="hero-content">
+      <h1>Transformando vidas<br>através da música</h1>
+      <p>
+        A Soarte é uma organização sem fins lucrativos dedicada a promover o desenvolvimento sociocultural de crianças e jovens em situação de vulnerabilidade.
+      </p>
+
+      <!-- Botões de chamada para ação -->
+      <div class="hero-buttons">
+        <a href="#sobre" class="btn green">Saiba mais</a>
+        <a href="#contatos" class="btn">Participe</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção com os programas sociais musicais -->
+  <section class="musica">
+    <h4>Música</h4>
+    <h1>Iniciativas Transformadoras<br>da Soarte</h1>
+    <p class="descricao">
+      A Soarte desenvolve programas sociais que utilizam a música como ferramenta de inclusão e desenvolvimento.
+    </p>
+
+    <!-- Galeria de imagens dos projetos -->
+    <div class="fotos">
+      <div class="foto">
+        <img src="img/fundo.jpg" alt="" class="card-img">
+        <h3>Concertos e Apresentações Comunitárias</h3>
+        <p>Realizamos eventos que promovem a cultura local</p>
+      </div>
+
+      <div class="foto">
+        <img src="img/conceito-de-musica-plana-leiga-no-fundo-branco_23-2148282030.webp" alt="" class="card-img">
+        <h3>Concertos e Apresentações Comunitárias</h3>
+        <p>Realizamos eventos que promovem a cultura local</p>
+      </div>
+
+      <div class="foto">
+        <img src="img/notas-musicais-brilhantes-em-fundo-com-bokeh_863013-201355.webp" alt="" class="card-img">
+        <h3>Concertos e Apresentações Comunitárias</h3>
+        <p>Realizamos eventos que promovem a cultura local</p>
+      </div>
+    </div>
+
+    <!-- Botão extra (pode ser linkado a outra seção) -->
+    <div class="botoes">
+      <button class="saiba-mais">Saiba mais</button>
+    </div>
+  </section>
+
+  <!-- Seção de Contato -->
+  <section id="contatos" class="contact-section">
+    <div class="contact-info">
+      <h5>Junte-se</h5>
+      <h1>Entre em contato</h1>
+      <p>Contribua com seu tempo ou recursos para a música.</p>
+
+      <!-- Bloco com informações de e-mail -->
+      <div class="contact-item">
+        <h3>Email</h3>
+        <p>Fale conosco</p>
+        <p><a href="mailto:contato@soarte.org.br">contato@soarte.org.br</a></p>
+      </div>
+
+      <!-- Bloco com telefone -->
+      <div class="contact-item">
+        <h3>Telefone</h3>
+        <p>Entre em contato conosco</p>
+        <p><a href="tel:+5511999999999">+55 (11) 99999-9999</a></p>
+      </div>
+
+      <!-- Endereço físico -->
+      <div class="contact-item">
+        <h3>Escritório</h3>
+        <p>Rua Antônio Luís de Souza - Ponta da Serra de Pitiguari, Pacatuba - CE, 61800-000</p>
+        <a href="https://www.google.com/maps" target="_blank">Obter Direções →</a>
+      </div>
+    </div>
+
+    <!-- Mapa interativo (Google Maps) -->
+    <div class="contact-image">
+      <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.4279134737035!2d-38.6099121!3d-3.9317735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c755ab0798d5f3%3A0x613210557bbb180a!2sR.%20Ant%C3%B4nio%20Lu%C3%ADs%20de%20Souza%20-%20Ponta%20da%20Serra%20de%20Pitiguari%2C%20Pacatuba%20-%20CE%2C%2061800-000!5e0!3m2!1spt-BR!2sbr!4v1749934215844!5m2!1spt-BR!2sbr" 
+  width="100%" 
+  height="400" 
+  style="border:0; border-radius: 12px;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+    </div>
+  </section>
+
+  <!-- Rodapé da página -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logotipo no rodapé -->
+      <div class="logo-footer">
+        <img src="img/logo-soarte.png" alt="Logo da Soarte" class="card-img-footer">
+      </div>
+
+      <!-- Ícones de redes sociais -->
+      <div class="social-icons">
+        <a href="https://www.instagram.com/soartepacatuba/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram"></i> <!-- Ícone Instagram -->
+        </a>
+        <a href="https://www.facebook.com/sociedadeartistica/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-facebook-f"></i> <!-- Ícone Facebook -->
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
 </body>
 </html>
