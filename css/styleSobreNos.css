@@ -1,15 +1,19 @@
 /* Reset básico */
 * {
+    font-family: "Poppins", sans-serif;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  body, html {
+body, html {
     height: 100%;
-    font-family: 'Arial', sans-serif;
-  }
-  
+    font-family: "Montserrat", sans-serif;
+}
+
   /* HEADER */
   header {
     position: fixed;
