@@ -352,7 +352,7 @@ body, html {
 
 .convite-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   max-width: 100%;
 }
@@ -361,9 +361,9 @@ body, html {
 .convite-texto-esquerda {
   flex: 1;
   min-width: 280px;
-  margin-right: 100px;
-  align-self: flex-start;
-  margin-top: 10px;
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
 }
 
 .convite-texto-esquerda h2 {

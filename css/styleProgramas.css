@@ -241,3 +241,32 @@ nav a:hover {
   border-radius: 8px;
   object-fit: cover;
 }
+
+
+/* EFEITO DE MOVIMENTO LATERAL (SIMPLES) */
+
+/* Estado inicial — vem da esquerda */
+.programas-img img,
+.violao-image img,
+.template-image img {
+  opacity: 0;
+  transform: translateX(-40px); /* vem da esquerda */
+  transition: 
+    opacity 0.9s ease-out,
+    transform 0.9s ease-out;
+}
+
+/* Quando a imagem entra na tela */
+.programas-img img.visible,
+.violao-image img.visible,
+.template-image img.visible {
+  opacity: 1;
+  transform: translateX(0); /* volta para o lugar */
+}
+
+/* Pequeno efeito no hover */
+.programas-img img:hover,
+.violao-image img:hover,
+.template-image img:hover {
+  transform: translateX(0) scale(1.02);
+}
